@@ -44,6 +44,7 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-history-substring-search
 zinit light Aloxaf/fzf-tab
 zinit light MichaelAquilina/zsh-you-should-use
 
@@ -87,8 +88,16 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Autosuggestion key bindings 
 
+# Alt+J - backward history search
 bindkey '^[j' history-search-backward
+# Alt+K - backward history search
 bindkey '^[k' history-search-backward
+# Ctrl+Space (Caps Lock+Space) - accept autosuggestion
+bindkey '^ ' autosuggest-accept
+# Ctrl+N - forward history substring search
+bindkey '^N' history-substring-search-down
+# Ctrl+P - backward history substring search
+bindkey '^P' history-substring-search-up
 
 
 # Shell integrations
@@ -113,3 +122,6 @@ alias ll='ls -la'
 alias as='f() { alias | grep -- "$1"; }; f'
 # git ammend and push last commit
 alias gafp='git add -A && git commit --amend --no-edit && git push --force-with-lease'
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
