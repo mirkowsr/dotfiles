@@ -1,5 +1,72 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "policies": [
+    {
+      "action": "tool.use",
+      "resource": "shell:git commit *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:git push *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:git reset *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:git checkout *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:git restore *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:git clean *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:rm *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:mv *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:sudo *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:curl *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:wget *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:chmod *",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "shell:chown *",
+      "effect": "deny"
+    }
+  ],
   "mcp": {
     "figma": {
       "enabled": true,

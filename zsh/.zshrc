@@ -111,6 +111,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Aliases
+alias oc='opencode'
+alias oc-auto='opencode --auto'
 alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
