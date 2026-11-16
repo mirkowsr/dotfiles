@@ -9,6 +9,19 @@
         "clientId": "mFCmLFOVHodPLqzpk8oUcS",
         "clientSecret": "pv8AfWYvs0BVX3f5XUbKTqO7yPYiQ7O8mjJNLPaV"
       }
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "servers": {
+      "browse": {
+        "type": "local",
+        "command": ["browse", "mcp"],
+        "environment": {
+          "OPENCODE_BROWSER_RUNTIME": "auto-update"
+        }
+      }
     }
   }
 }
