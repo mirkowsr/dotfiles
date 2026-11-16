@@ -19,5 +19,10 @@ return {
         },
       },
     },
+    terminal = {
+      win = {
+        position = "right",
+      },
+    },
   },
 }

@@ -31,10 +31,7 @@
     "servers": {
       "browse": {
         "type": "local",
-        "command": [
-          "browse",
-          "mcp"
-        ],
+        "command": ["browse", "mcp"],
         "environment": {
           "OPENCODE_BROWSER_RUNTIME": "auto-update"
         }
@@ -42,7 +39,6 @@
     }
   },
   "plugin": [
-    "@allegro/opencode-plugin-allegro-telemetry",
-    "list"
+    "@allegro/opencode-plugin-allegro-telemetry"
   ]
 }

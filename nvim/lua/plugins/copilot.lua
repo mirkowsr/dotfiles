@@ -6,7 +6,8 @@ return {
   opts = {
     suggestion = {
       -- disable in blink.cmp
-      enabled = not vim.g.ai_cmp,
+      -- enabled = not vim.g.ai_cmp,
+      enabled = false,
       auto_trigger = true,
       hide_during_completion = vim.g.ai_cmp,
       keymap = {
