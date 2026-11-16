@@ -9,6 +9,7 @@ return {
         vtsls = {
           settings = {
             typescript = {
+              preferGoToSourceDefinition = true,
               preferences = {
                 importModuleSpecifierPreference = "non-relative",
                 includePackageJsonAutoImports = "on",
