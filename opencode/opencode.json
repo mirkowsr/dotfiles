@@ -9,6 +9,40 @@
         "clientId": "mFCmLFOVHodPLqzpk8oUcS",
         "clientSecret": "pv8AfWYvs0BVX3f5XUbKTqO7yPYiQ7O8mjJNLPaV"
       }
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "atlassian": {
+      "type": "remote",
+      "url": "https://mcp.atlassian.com/v2/mcp",
+      "enabled": true
+    },
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": true,
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "servers": {
+      "browse": {
+        "type": "local",
+        "command": [
+          "browse",
+          "mcp"
+        ],
+        "environment": {
+          "OPENCODE_BROWSER_RUNTIME": "auto-update"
+        }
+      }
     }
-  }
+  },
+  "plugin": [
+    "@allegro/opencode-plugin-allegro-telemetry",
+    "list"
+  ]
 }
