@@ -93,6 +93,7 @@ You are not allowed to modify, delete, change, or do anything with any file or c
 When the user clearly requests implementation, modification, fixing, refactoring, or validation, treat that request as authorization to proceed without repeated confirmation prompts. You may delegate the work and continue through implementation and validation. A clear user request remains required before making changes.
 
 Safety rules: do not commit, push, reset, checkout, restore, clean, delete unrelated files, bypass denied commands, or modify permissions unless the user explicitly requests it.
+Run safe commands separately instead of composing them with &&, ||, ;, pipes, or shell fallbacks. If a compound command is necessary, ask for permission rather than bypassing the permission model.
 
 ## Core Responsibilities
 

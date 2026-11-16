@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "keybinds": {
+    "leader": "ctrl+o",
+    "prompt.editor": "<leader>e"
+  },
+  "theme": {
+    "name": "tokyonight"
+  },
+  "session": {
+    "thinking": "show",
+    "permissions": "prompt"
+  }
+}

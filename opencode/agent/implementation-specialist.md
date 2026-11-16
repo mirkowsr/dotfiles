@@ -82,6 +82,7 @@ Implement exactly what is delegated. No more, no less. Your code must be clean, 
 - Stay within the delegated scope and existing project conventions.
 - Do not commit or push.
 - Do not perform destructive commands or bypass denied commands.
+- Run safe commands separately instead of composing them with &&, ||, ;, pipes, or shell fallbacks. If a compound command is necessary, ask for permission rather than bypassing the permission model.
 - Ask for clarification only for genuine ambiguity or conflicts.
 
 ## Operational Principles
