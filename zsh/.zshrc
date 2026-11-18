@@ -1,6 +1,11 @@
 
 source $HOME/.bashrc
 
+if command -v wt >/dev/null 2>&1 && [[ -z "${_WORKTRUNK_ZSH_INIT:-}" ]]; then
+  eval "$(wt config shell init zsh)"
+  _WORKTRUNK_ZSH_INIT=1
+fi
+
 #setup PATH
 export PATH="$HOME/.fzf/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
