@@ -1,0 +1,2 @@
+[projects."github.com/allegro-internal/opbox-allegro-installments"]
+worktree-path = "{{ repo_path }}/../{{ repo }}-worktrees/{{ branch | sanitize }}"

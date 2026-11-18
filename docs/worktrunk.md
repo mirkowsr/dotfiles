@@ -1,17 +1,10 @@
 # Worktrunk workflow
 
-- Keep personal Worktrunk settings private in `~/.config/worktrunk/config.toml`.
-- Configure a project explicitly when needed:
-
-  ```toml
-  # Keep worktrees inside the repository.
-  # Add the matching entry to the repository's .gitignore.
-  [projects."github.com/alice/myapp"]
-  worktree-path = ".worktrees"
-  ```
-
-- Add `.worktrees/` to the project's `.gitignore`; never commit generated
-  worktrees.
+- The dotfiles-managed configuration is symlinked to
+  `~/.config/worktrunk/config.toml`.
+- For `github.com/allegro-internal/opbox-allegro-installments`, it creates
+  sibling worktrees under `<repo>-worktrees/<branch>`, outside the repository.
+  Generated worktrees therefore do not need a project `.gitignore` entry.
 - Detect and switch to the default branch with `wt switch ^`. Do not assume
   it is named `main` or `master`.
 - On the default branch, write the task specification and commit it before

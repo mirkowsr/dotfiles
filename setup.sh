@@ -9,6 +9,8 @@ DOTFILES_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 ln -sf "$DOTFILES_DIR/bash/.bashrc" "$HOME/.bashrc"
 
 # Worktrunk
+mkdir -p "$HOME/.config/worktrunk"
+ln -sf "$DOTFILES_DIR/worktrunk/config.toml" "$HOME/.config/worktrunk/config.toml"
 bash "$DOTFILES_DIR/bash/setup-worktrunk.sh"
 
 # Zsh
